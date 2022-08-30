@@ -1,0 +1,14 @@
+name : Oskar
+
+on:
+    push:
+      branches: [ main ]
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+       - name: Bot Whatsapp
+         run: |
+           git clone https://github.com/Yuri-Neko/Oskar && sudo apt install ffmpeg imagemagick -y && cd Oskar && npm install && npm start
